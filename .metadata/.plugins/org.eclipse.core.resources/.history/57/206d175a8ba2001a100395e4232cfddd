@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Aula_24 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 
+	 System.out.print("Digite uma palavra: ");
+	 	
+	 Scanner sc = new Scanner(System.in);
+     
+     String x;
+     x = sc.next();
+     
+     System.out.println("Você digitou: " + x);
+    
+     sc.close();
+     
+	}
+
+}

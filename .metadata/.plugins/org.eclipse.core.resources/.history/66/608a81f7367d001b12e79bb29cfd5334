@@ -1,0 +1,91 @@
+package Seção_10;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import Entities.Employees;
+
+public class Exercicio_Lista {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		List<Employees> list = new ArrayList<>();
+
+		System.out.print("How many employees will be registered? ");
+		int n = sc.nextInt();
+
+		int id;
+		String name;
+		double salary;
+
+		for (int i = 0; i < n; i++) {
+
+			System.out.println("Employee #" + (i + 1));
+
+			System.out.print("Id: ");
+			id = sc.nextInt();
+
+			System.out.print("Name: ");
+			sc.nextLine();
+			name = sc.nextLine();
+
+			System.out.print("Salary: ");
+			salary = sc.nextDouble();
+
+			Employees employee = new Employees(id, name, salary);
+
+			list.add(employee);
+
+			System.out.println();
+
+		}
+
+		System.out.print("Enter the employee id that will have salary increase : ");
+		n = sc.nextInt();
+
+		Integer pos = position(list, n);
+
+		if (pos == null) {
+			System.out.println("This id does not exist!!!");
+		}
+
+		else {
+			System.out.print("Enter the percentage: ");
+			double percent = sc.nextDouble();
+			// Caso o id exista pegará a posição do mesmo e fará o incremento de
+			// salário.
+			list.get(pos).Increase(percent);
+		}
+
+		System.out.println("List of employees:");
+		
+		for (Employees obj : list) {
+			System.out.println(obj);
+		}
+
+		sc.close();
+
+	}
+
+	// Função auxiliar para achar a posição do id na lista.
+	// Precisa ser static pois o método main é static.
+
+	static Integer position(List<Employees> list, int id) {
+
+		for (int i = 0; i < list.size(); i++) {
+			if (list.get(i).getId() == id) {
+				return i;
+			}
+		}
+
+		return null;
+
+	}
+
+}

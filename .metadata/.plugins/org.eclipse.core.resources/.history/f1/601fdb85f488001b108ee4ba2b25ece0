@@ -1,0 +1,44 @@
+package entities;
+
+import entities.enums.Color;
+
+public class Circle extends Shape {
+
+	private String circle = "Circle";
+	private Double radius;
+
+	public Circle() {
+
+	}
+
+	public Circle(Color color, Double radius) {
+		super(color);
+		this.radius = radius;
+	}
+
+	public Double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(Double radius) {
+		this.radius = radius;
+	}
+
+	public String getCircle() {
+		return circle;
+	}
+
+	public void setCircle(String circle) {
+		this.circle = circle;
+	}
+
+	@Override
+	public double area() {
+
+		final Double pi = 3.14;
+
+		return pi * radius * radius;
+
+	}
+
+}

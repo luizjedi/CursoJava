@@ -1,0 +1,42 @@
+package Secao_11;
+
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.Calendar;
+import java.util.Date;
+
+public class ExemploCalendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date d = Date.from(Instant.parse("2018-06-25T15:42:07Z"));
+		
+		System.out.println(sdf.format(d));
+		
+		//Acrescentando horas a uma data.
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(d);
+		cal.add(Calendar.HOUR_OF_DAY, 4);
+		
+		d = cal.getTime();
+		
+		System.out.println(sdf.format(d));
+		
+		//Pegar uma unidade de tempo desejada.
+		cal.setTime(d);
+		int minutes = cal.get(Calendar.MINUTE);
+		
+		//Como o java considera Janeiro como mês 0 então devemos sempre adicionar
+		// mais 1 a variável para se obter o valor correto.
+		int month = 1 + cal.get(Calendar.MONTH);
+		
+		System.out.println("Minutes: " + minutes);
+		System.out.println("Month: " + month);
+		
+		
+	}
+
+}

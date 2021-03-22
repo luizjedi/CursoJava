@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+	   
+	   double x = 77.7325;
+
+	   System.out.printf("%.2f%n", x);
+	   System.out.printf("%.3f%n", x);
+	   
+	}
+
+}

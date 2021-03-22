@@ -1,0 +1,22 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Aula_24 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 
+	 System.out.print("Digite uma letra: ");
+	 Locale.setDefault(Locale.US);
+	 Scanner sc = new Scanner(System.in);
+     
+     char x;
+     x = sc.next().charAt(0);
+     
+     System.out.println("Você digitou: " + x);
+    
+     sc.close();
+     
+	}
+
+}

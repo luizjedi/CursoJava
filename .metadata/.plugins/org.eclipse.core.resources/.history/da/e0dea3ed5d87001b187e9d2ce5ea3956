@@ -1,0 +1,10 @@
+package application;
+
+public class Aula_125_Heranca {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

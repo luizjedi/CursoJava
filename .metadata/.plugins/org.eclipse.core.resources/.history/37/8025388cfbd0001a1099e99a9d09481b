@@ -1,0 +1,22 @@
+
+public class Aula_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String original = "abcde FGHIJ ABC abc DEFG  ";
+
+		String s01 = original.toLowerCase();
+		String s02 = original.toUpperCase();
+		String s03 = original.trim();
+		String s04 = original.substring(2);
+
+		System.out.println("Original: -" + original + "-");
+		System.out.println("ToLowerCase: -" + s01 + "-");
+		System.out.println("ToUpperCase: -" + s02 + "-");
+		System.out.println("Trim: -" + s03 + "-");
+		System.out.println("Substring: -" + s04 + "-");
+
+	}
+
+}

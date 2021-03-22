@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Exe_For_02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+
+		int n, in = 0, out = 0;
+
+		System.out.println("Insira a quantidade de inteiros que deseja analisar:");
+		n = sc.nextInt();
+
+		for (int i = 0; i < n; i++) {
+			sc.nextInt();
+
+			if (n >= 10 && n <= 20) {
+				in += 1;
+			}
+
+			else {
+				out += 1;
+			}
+
+		}
+
+		System.out.printf("%d in\n%d out", in, out);
+
+		sc.close();
+
+	}
+
+}

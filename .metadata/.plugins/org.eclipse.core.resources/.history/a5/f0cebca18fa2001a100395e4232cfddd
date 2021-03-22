@@ -1,0 +1,32 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Aula_24 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 
+	 System.out.print("Digite seu nome, sua idade e seu salário: ") ;
+	 Locale.setDefault(Locale.US);
+	 Scanner sc = new Scanner(System.in);
+     
+     String x, a, b;
+     int y;
+     double z;
+     
+     x = sc.next();
+     a = sc.next();
+     b = sc.next();
+     v = sc.next();
+     y = sc.nextInt();
+     z = sc.nextDouble();
+     
+     System.out.printf("Nome: %s %s %s %s%n", x, a, b, v);
+     System.out.printf("Idade: %d%n", y);
+     System.out.printf("Salário: R$%.2f%n", z);
+    
+     sc.close();
+     
+	}
+
+}

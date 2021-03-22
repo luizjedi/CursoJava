@@ -1,0 +1,44 @@
+package entities;
+
+public class Corporation extends Person {
+	
+	private Integer numberOfEmployees;
+
+	public Corporation() {
+		super();
+	}
+	
+	public Corporation(String name, Double income, Integer numberOfEmployees) {
+		super(name, income);
+		this.numberOfEmployees = numberOfEmployees;
+	}
+
+	public Integer getNumberOfEmployees() {
+		return numberOfEmployees;
+	}
+
+	public void setNumberOfEmployees(Integer numberOfEmployees) {
+		this.numberOfEmployees = numberOfEmployees;
+	}
+
+	@Override
+	public final double tax() {
+
+		double totalTax = 0.0;
+		
+		if (numberOfEmployees > 10) {
+			
+			totalTax = getIncome() * 0.14;
+		}
+		
+		else {
+			
+			totalTax = getIncome() * 0.16;
+		}
+		
+		return totalTax;
+	}
+	
+	
+
+}
