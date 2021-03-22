@@ -2349,3 +2349,34 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-03-22 12:51:25.835
 !MESSAGE locking FileBasedConfig[C:\Users\luizp\.config\jgit\config] failed after 5 retries
+!SESSION 2021-03-22 17:27:44.235 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.6
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-22 17:28:01.193
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\luizp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2021-03-22 18:49:47.577 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.6
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-22 18:50:03.762
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\luizp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.rse.core 1 0 2021-03-22 19:03:25.982
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.

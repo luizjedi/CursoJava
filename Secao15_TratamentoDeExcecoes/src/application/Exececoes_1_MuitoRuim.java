@@ -44,20 +44,17 @@ public class Exececoes_1_MuitoRuim {
 			System.out.print("Check-out date (dd/MM/yyyy): ");
 			checkOut = sdf.parse(sc.next());
 
-			Date now = new Date();
+			String error = reservation.updateDates(checkIn, checkOut);
 
-			if (!checkOut.after(checkIn)) {
-				System.out.println("Error in reservation: Check-out must be after check-in date");
-			}
+			if (error != null) {
 
-			else if (checkIn.before(now) || checkOut.before(now)) {
-				System.out.println("Error in reservation: Reservation dates for update must be future dates");
+				System.out.println(error);
+
 			}
 
 			else {
-				reservation.updateDates(checkIn, checkOut);
-				System.out.println("Reservation: " + reservation);
 
+				System.out.println("Reservation: " + reservation);
 			}
 		}
 

@@ -65,3 +65,4 @@
 2021-03-19 15:54:42,017 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2021-03-22 12:45:50,032 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2021-03-22 12:51:25,833 [ForkJoinPool.commonPool-worker-3] WARN  org.eclipse.jgit.util.FS - locking FileBasedConfig[C:\Users\luizp\.config\jgit\config] failed after 5 retries
+2021-03-22 17:28:00,158 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
