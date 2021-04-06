@@ -8,6 +8,7 @@ public class LendoArquivo {
 
 	public static void main(String[] args) {
 		
+		// É preciso colocar \\ após cada pasta até chegar ao caminho desejado.
 		File file = new File("E:\\Documentos\\CursoJava\\Secao17\\teste.txt");
 		Scanner sc = null;
 		
