@@ -12,13 +12,8 @@ public class FileReader_BufferedReader {
 		// TODO Auto-generated method stub
 
 		String path = "E:\\Documentos\\CursoJava\\Secao17\\teste.txt";
-		FileReader fr = null;
-		BufferedReader br = null;
 
-		try {
-
-			fr = new FileReader(path);
-			br = new BufferedReader(fr); // Deixa a leitura com um melhor desempenho.
+		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
 			String line = br.readLine();
 
@@ -32,22 +27,6 @@ public class FileReader_BufferedReader {
 			System.out.println("Error: " + e.getMessage());
 		}
 
-		finally {
-			try {
-
-				if (br != null) {
-					br.close();
-				}
-
-				if (fr != null) {
-					fr.close();
-				}
-			}
-
-			catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
 	}
 
 }
