@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Entities.enums.OrderStatus"/>
-    <fullyQualifiedTypeName name="Entities.Product3"/>
-    <fullyQualifiedTypeName name="Entities.OrderItem"/>
-    <fullyQualifiedTypeName name="entities.OutsourcedEmployee"/>
-    <fullyQualifiedTypeName name="entities.Employee"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="entities.ImportedProduct"/>
-    <fullyQualifiedTypeName name="entities.UsedProduct"/>
-    <fullyQualifiedTypeName name="entities.Account"/>
-    <fullyQualifiedTypeName name="entities.AccountAbstract"/>
-    <fullyQualifiedTypeName name="entities.SavingsAccount"/>
-    <fullyQualifiedTypeName name="entities.BusinessAccount"/>
     <fullyQualifiedTypeName name="entities.Shape"/>
     <fullyQualifiedTypeName name="entities.enums.Color"/>
     <fullyQualifiedTypeName name="entities.Rectangle"/>
@@ -21,11 +9,9 @@
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="model.entities.Reservation"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="model.exceptions.DomainException"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="model.entities.Account"/>
     <fullyQualifiedTypeName name="model.exceptions.DomainFixException"/>
     <fullyQualifiedTypeName name="boardgame.Piece"/>
@@ -55,9 +41,23 @@
     <fullyQualifiedTypeName name="entities.Product"/>
     <fullyQualifiedTypeName name="sun.java2d.loops.ScaledBlit"/>
     <fullyQualifiedTypeName name="application.ExercicioProposto"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="model.entities.Invoice"/>
+    <fullyQualifiedTypeName name="model.entities.CarRental"/>
+    <fullyQualifiedTypeName name="model.entities.Vehicle"/>
+    <fullyQualifiedTypeName name="model.services.RentalService"/>
+    <fullyQualifiedTypeName name="model.services.BrazilTaxService"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="model.services.PaymentService"/>
+    <fullyQualifiedTypeName name="model.entities.Contract"/>
+    <fullyQualifiedTypeName name="model.services.ContractData"/>
+    <fullyQualifiedTypeName name="model.services.ContractService"/>
+    <fullyQualifiedTypeName name="model.services.PaypalService"/>
+    <fullyQualifiedTypeName name="model.entities.Installment"/>
 </qualifiedTypeNameHistroy>
