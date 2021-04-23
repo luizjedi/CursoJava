@@ -13,7 +13,8 @@ public class ExerFixMap {
 
 		Scanner sc = new Scanner(System.in);
 
-		Map<String, Integer> votes = new LinkedHashMap<>(); //
+		Map<String, Integer> votes = new LinkedHashMap<>(); // Mantém a ordem de 
+		// inserção dos elementos.
 
 		System.out.print("Enter file full path: ");
 		String path = sc.nextLine();
