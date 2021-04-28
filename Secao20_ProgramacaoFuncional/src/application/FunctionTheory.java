@@ -2,6 +2,7 @@ package application;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import entities.Product;
@@ -22,7 +23,9 @@ public class FunctionTheory {
 		// converter o stream em list novamente basta add o comando :
 		// .collect(Collectors.toList())
 		
-		List<String> names = list.stream().map(Product::noStaticUperCase).collect(Collectors.toList());
+		Function<Product, String> pred = p -> p.getName().toUpperCase();
+		
+		List<String> names = list.stream().map(pred).collect(Collectors.toList());
 		
 		names.forEach(System.out::println);
 
