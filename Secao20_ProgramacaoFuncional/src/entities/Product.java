@@ -26,21 +26,25 @@ public class Product {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
-	
+
 	public static boolean staticProductPredicate(Product p) {
 		return p.getPrice() >= 100.00;
 	}
-	
+
 	public boolean noSaticProductPredicate() {
 		return price >= 100.00;
 	}
-	
+
 	public static void staticPriceUpdate(Product p) {
 		p.setPrice(p.getPrice() * 1.1);
 	}
-	
+
 	public void noStaticPriceUpdate() {
 		setPrice(price * 1.1);
+	}
+
+	public static String staticUperCase(Product p) {
+		return p.getName().toUpperCase();
 	}
 
 	@Override

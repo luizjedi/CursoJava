@@ -23,7 +23,7 @@ public class FunctionTheory {
 		// converter o stream em list novamente basta add o comando :
 		// .collect(Collectors.toList())
 		
-		List<String> names = list.stream().map(new UperCaseName()).collect(Collectors.toList());
+		List<String> names = list.stream().map(Product::staticUperCase).collect(Collectors.toList());
 		
 		names.forEach(System.out::println);
 
