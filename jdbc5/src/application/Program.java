@@ -4,12 +4,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import db.DB;
+import db.DbException;
 
 public class Program {
 
 	public static void main(String[] args) {
 
-		// Atualizando dados
+		// Deletando dados
+		
 		Connection conn = null;
 		PreparedStatement st = null;
 		
@@ -17,12 +19,12 @@ public class Program {
 			conn = DB.getConnection();
 			
 			st = conn.prepareStatement(
-			"UPDATE seller SET BaseSalary = BaseSalary + ? "
-			+ "WHERE "
-			+ "(DepartmentId = ?)");
+			"DELETE FROM seller "
+			+ "WHERE " // Se where não for adicionado o comando de delete será aplicado 
+			// a todos os componentes do banco.
+			+ "ID = ?");
 			
-			st.setDouble(1, 200.0);
-			st.setInt(2, 4);
+			st.setInt(1, 8);
 			
 			int rowsAffected = st.executeUpdate();
 			
@@ -31,7 +33,7 @@ public class Program {
 		}
 		
 		catch (SQLException e) {
-			e.printStackTrace();
+			throw new DbException(e.getMessage());
 		}
 		
 		finally {
